@@ -1,0 +1,69 @@
+# --- PROGRAM PENCARIAN (PYTHON) ---
+
+# Kasus 1: Absensi Kelas (Linear Search)
+def cari_absensi(daftar, target):
+    for i in range(len(daftar)):
+        if daftar[i] == target:
+            return i
+    return -1
+
+siswa = ["Budi", "Siti", "Rian", "Dewi"]
+hasil1 = cari_absensi(siswa, "Rian")
+print(f"Kasus 1: Rian ditemukan pada indeks ke-{hasil1}")
+
+
+# Kasus 2: Lost and Found (Binary Search)
+# Catatan: Karena memakai Binary Search, data harus diurutkan dulu secara alfabetis
+def cari_barang(tumpukan, target):
+    low = 0
+    high = len(tumpukan) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if tumpukan[mid] == target:
+            return mid
+        elif tumpukan[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+# Data barang disesuaikan agar terurut (A-Z) untuk Binary Search
+barang = ["Botol Minum", "Dompet", "Kunci Motor", "Payung"]
+hasil2 = cari_barang(barang, "Kunci Motor")
+print(f"Kasus 2: Kunci Motor ditemukan pada indeks ke-{hasil2}")
+
+
+# Kasus 3: Buku Perpustakaan (Linear Search)
+def cari_buku(rak, target):
+    for i in range(len(rak)):
+        if rak[i] == target:
+            return i
+    return -1
+
+nomor_seri = [101, 103, 105, 110, 120]
+hasil3 = cari_buku(nomor_seri, 105)
+print(f"Kasus 3: Buku nomor 105 ditemukan pada indeks ke-{hasil3}")
+
+
+# Kasus 4: Ranking Tryout (Linear Search)
+def cari_ranking(skor_list, target):
+    for i in range(len(skor_list)):
+        if skor_list[i] == target:
+            return i
+    return -1
+
+skor = [950, 900, 890, 850, 800]
+hasil4 = cari_ranking(skor, 890)
+print(f"Kasus 4: Skor 890 ditemukan pada posisi indeks ke-{hasil4}")
+
+
+# Kasus 5: Kamus Istilah (Linear Search)
+def cari_kamus(kamus, target):
+    for i in range(len(kamus)):
+        if kamus[i] == target:
+            return i
+    return -1
+
+istilah = ["AI", "Algorithm", "Big Data", "Cloud"]
+hasil5 = cari_kamus(istilah, "Algorithm")
+print(f"Kasus 5: Istilah Algorithm ditemukan pada indeks ke-{hasil5}")
