@@ -8,7 +8,7 @@ function cari_absensi($daftar, $target) {
 }
 $siswa = ["Budi", "Siti", "Rian", "Dewi"];
 $h1 = cari_absensi($siswa, "Rian");
-echo "Kasus 1: Rian di indeks $h1\n";
+echo "Kasus 1: Rian di indeks $h1";
 
 //kasus 2
 function cari_barang($tumpukan, $target) {
@@ -19,7 +19,7 @@ function cari_barang($tumpukan, $target) {
 }
 $barang = ["Dompet", "Payung", "Kunci Motor", "Botol Minum"];
 $h2 = cari_barang($barang, "Kunci Motor");
-echo "Kasus 2: Kunci Motor di indeks $h2\n";
+echo "Kasus 2: Kunci Motor di indeks $h2";
 
 //Kasus 3
 function cari_buku($rak, $target) {
@@ -35,7 +35,7 @@ function cari_buku($rak, $target) {
 
 $nomor_seri = [101, 103, 105, 110, 120];
 $h3 = cari_buku($nomor_seri, 105);
-echo "Kasus 3: Buku 105 di indeks $h3\n";
+echo "Kasus 3: Buku 105 di indeks $h3";
 
 //Kasus 4
 function cari_ranking($skor_list, $target) {
@@ -50,7 +50,7 @@ function cari_ranking($skor_list, $target) {
 }
 $skor = [950, 900, 890, 850, 800];
 $h4 = cari_ranking($skor, 890);
-echo "Kasus 4: Skor 890 di indeks $h4\n";
+echo "Kasus 4: Skor 890 di indeks $h4";
 
 //Kasus 5
 function cari_kamus($kamus, $target) {
@@ -65,6 +65,6 @@ function cari_kamus($kamus, $target) {
 }
 $istilah = ["AI", "Algorithm", "Big Data", "Cloud"];
 $h5 = cari_kamus($istilah, "Algorithm");
-echo "Kasus 5: Algorithm di indeks $h5\n";
+echo "Kasus 5: Algorithm di indeks $h5";
 
 ?>
