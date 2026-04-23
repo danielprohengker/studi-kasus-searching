@@ -21,7 +21,7 @@ def cari_barang(tumpukan, target):
             low = mid + 1
         else:
             high = mid - 1
-    return f"Barang {target} nggak ada di tumpukan"
+    return f"{target} nggak ada di tumpukan"
 
 barang = ["Botol Minum", "Dompet", "Kunci Motor", "Payung"]
 print(cari_barang(barang, "Kunci Motor"))
