@@ -3,7 +3,7 @@ def cari_absensi(daftar, target):
     for i in range(len(daftar)):
         if daftar[i] == target:
             return f"Siswa bernama {target} ketemu di indeks {i}"
-    return f"Waduh, {target} nggak ada di absensi"
+    return f"{target} nggak ada di absensi"
 
 siswa = ["Budi", "Siti", "Rian", "Dewi"]
 print(cari_absensi(siswa, "Rian"))
